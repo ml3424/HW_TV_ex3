@@ -26,13 +26,14 @@ public class MainActivity extends AppCompatActivity {
         if(counter <= 6)
         {
             tV.setTextColor(Color.GREEN);
+            tV.setTextSize(12);
             tV.setText("This is a click number: " + counter);
         }
         else
         {
             counter = 0;
             tV.setTextColor(Color.RED);
-            tV.setTextSize(30);
+            tV.setTextSize(23);
             tV.setText("Enough to click. Go to new start!");
         }
     }
