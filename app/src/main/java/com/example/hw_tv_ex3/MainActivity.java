@@ -2,6 +2,7 @@ package com.example.hw_tv_ex3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,11 +25,14 @@ public class MainActivity extends AppCompatActivity {
         counter ++;
         if(counter <= 6)
         {
+            tV.setTextColor(Color.GREEN);
             tV.setText("This is a click number: " + counter);
         }
         else
         {
             counter = 0;
+            tV.setTextColor(Color.RED);
+            tV.setTextSize(30);
             tV.setText("Enough to click. Go to new start!");
         }
     }
