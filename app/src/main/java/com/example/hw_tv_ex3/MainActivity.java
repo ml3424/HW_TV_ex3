@@ -3,6 +3,7 @@ package com.example.hw_tv_ex3;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -19,4 +20,16 @@ public class MainActivity extends AppCompatActivity {
         tV = findViewById(R.id.tV);
     }
 
+    public void click(View view) {
+        counter ++;
+        if(counter <= 6)
+        {
+            tV.setText("This is a click number: " + counter);
+        }
+        else
+        {
+            counter = 0;
+            tV.setText("Enough to click. Go to new start!");
+        }
+    }
 }
